@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dojo Weather</title>
+
+</head>
+<body>
+    <!--Nav bar-->
+    <div class="nav">
+        <h1 class="nav-title">DojoWeather</h1>
+        <section>
+            <h2 onclick="alert('Loading weather report...')">Burbank</h2>
+            <h2 onclick="alert('Loading weather report...')">Chicago</h2>
+            <h2 onclick="alert('Loading weather report...')">Dallas</h2>
+        </section>
+    </div>
+    <!--Main section page-->
+    <div class="main">
+        <!--Main section header-->
+        <section>
+            <h1>San Jose</h1>
+            <h3>show temperatire in</h3>
+            <select onchange="convertTemp(this)">
+                <option>℃</option>
+                <option>℉</option>
+            </select>
+        </section>
+        <!--Different days cards-->
+        <div class="forcast">
+            <div class="card">
+                <h1>Today</h1>
+                <img src="assets/some_rain.png">
+                <h3>some rain</h3>
+                <div class="temp">
+                    <h3 class="highTemp">24°</h3><h3 class="lowTemp">18°</h3>
+                </div>
+            </div>
+            <div class="card">
+                <h1>Tomorrow</h1>
+                <img src="assets/some_sun.png">
+                <h3>some rain</h3>
+                <div class="temp">
+                    <h3 class="highTemp">27°</h3><h3 class="lowTemp">19°</h3>
+                </div>
+            </div>
+            <div class="card">
+                <h1>Friday</h1>
+                <img src="assets/some_clouds.png">
+                <h3>some rain</h3>
+                <div class="temp">
+                    <h3 class="highTemp">21°</h3><h3 class="lowTemp">16°</h3>
+                </div>
+            </div>
+            <div class="card">
+                <h1>Saturday</h1>
+                <img src="assets/some_sun.png">
+                <h3>some rain</h3>
+                <div class="temp">
+                    <h3 class="highTemp">26°</h3><h3 class="lowTemp">11°</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Coookie agreemant at the bottom-->
+    <div class="cookieNotification">
+        <img src="assets/cookie.png">
+        <section>
+            <h2>Stop! Cookie time</h2>
+            <p>We use cookies (sadly not the edible ones) to personalize
+                content and ads, to provide social media features and to
+                analyse our traffic. <a href="#">Read more...</a>
+            </p>
+        </section>
+        <button onclick="removeNotification();">I Accept</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

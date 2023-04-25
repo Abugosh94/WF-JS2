@@ -1,0 +1,89 @@
+*{
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    background-color: gray;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-left: 10%;
+    width: 75%;
+    height: 4em;
+}
+
+.nav>input{
+    width: 20em;
+    height: 1.5em;
+}
+.nav>*{
+    margin: 5em;
+}
+
+.btn{
+    background-color: rgba(22,162,185,255);
+    color: whitesmoke;
+    box-shadow: 2px 2px 2px black;
+    width: 5em;
+    height: 2em;
+}
+
+.body{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+.main{
+    width: 30%;
+    margin-right: 1%;
+}
+.card{
+    display: flex;
+    border: 2px solid lightslategray;
+    margin-bottom: 2%;
+}
+
+.info{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info>*{
+    margin: 2%;
+}
+
+.about{
+    margin-top: 2em;
+    padding: 0.5em;
+}
+
+.sidecard{
+    border: 2px solid lightslategray;
+    margin-bottom: 2%;
+    width: 70%;
+}
+
+.sidecard>*{
+    margin: 5%;
+}
+
+.info>button{
+    margin: 2em;
+    width: 6em;
+    height: 2em;
+    box-shadow: 2px 2px 2px black;
+    background-color: #fed866;
+}
+
+.sidecard>button{
+    margin: 1em;
+    width: 80%;
+    height: 2em;
+    box-shadow: 2px 2px 2px black;
+    background-color: #92c57d;
+}

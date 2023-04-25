@@ -1,0 +1,65 @@
+.body{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+nav{
+    background-color: #000;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-left: 32%;
+    width: 48%;
+    height: 4em;
+}
+
+nav>h1{
+    margin: 2%;
+}
+
+#feed{
+    margin-left: 50%;
+}
+.sideProf{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid #000;
+    margin-right: 2%;
+    height: 15em;
+    width: 10em;
+}
+.sideProf>*{
+    margin: 5%;
+    margin-left: 20%;
+}
+.sideProf>img{
+    width: 5em;
+}
+.card{
+    width: 150%;
+    border: 2px solid #000;
+    margin-bottom: 2%;
+}
+
+.info{
+    display: flex;
+}
+
+.info>*{
+    margin: 2%;
+}
+
+.about{
+    padding: 0.5em;
+}
+
+.info>button{
+    margin: 2em;
+    width: 6em;
+    height: 2em;
+    box-shadow: 2px 2px 2px black;
+    background-color: #fed866;
+}
