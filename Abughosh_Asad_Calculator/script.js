@@ -6,7 +6,7 @@ var result=0;
 
 //changing display text based on chosen number
 function press(x){
-    if((display.innerText == "0" || (numCounter==0 || numCounter==2) )){
+    if((display.innerText == "0" || (numCounter==0 || numCounter%2==0) )){
         display.innerText = "";
         numCounter++;
     }
@@ -15,11 +15,11 @@ function press(x){
 
 //setting operator and pushing the number in display into an array
 function setOP(x){
+    op=x;
+    nums.push(Number(display.innerText));
     if (numCounter>1){
         calculate();
     }
-    op=x;
-    nums.push(Number(display.innerText));
     numCounter++;
 }
 
@@ -36,49 +36,36 @@ function calculate(){
     numCounter++;
     //calculating the first 2 numbers
     if (result == 0){
-        for(let i = 0; i<nums.length; i++){
             if (op == "+"){
-                result = nums[i]+nums[i+1];
-                break;
+                result = nums[0]+nums[1];
             }
             if (op == "-"){
-                result = nums[i]-nums[i+1];
-                break;
+                result = nums[0]-nums[1];
             }
             if (op == "/"){
-                result = nums[i]/nums[i+1];
-                break;
+                result = nums[0]/nums[1];
             }
             if (op == "*"){
-                result = nums[i]*nums[i+1];
-                break;
+                result = nums[0]*nums[1];
             }
-        }
     }
     //calculate result and the new number
     else{
-        for(let i = 2; i<nums.length; i++){
             if (op == "+"){
-                result += nums[i];
-                break;
+                result += nums[1];
             }
             if (op == "-"){
-                result -= nums[i];
-                break;
+                result -= nums[1];
             }
             if (op == "/"){
-                result /= nums[i];
-                break;
+                result /= nums[1];
             }
             if (op == "*"){
-                result *= nums[i];
-                break;
+                result *= nums[1];
             }
-        }
     }
     //resets numbs and places result on index 0 for further calculations
     nums= [];
-    nums[0] = result;
     numCounter = 1;
     display.innerText = result;
 }
