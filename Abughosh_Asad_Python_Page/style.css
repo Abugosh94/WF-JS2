@@ -36,11 +36,9 @@ section>img{
 
 .searchBox{
     display: flex;
-    border: 15px solid #464747;
-    padding-left: 2em;
-    padding-right: 1em;
+    padding: 1em 2em;
     background-color: #464747;
-    border-radius: 0.5em;
+    border-radius: 1em;
     margin-right: 1em;
     margin-top: 0.5em;
     box-shadow: 2px 2px;
@@ -71,7 +69,7 @@ nav{
     background-color: #4882b0;
     width: 85%;
     height: 2.5em;
-    border-bottom: 2px solid ;
+    
     border-top: 0.1px solid #2a5172;
     border-radius: 0.5em;
     margin-left: 10%;
